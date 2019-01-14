@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import os,sys
-import pyscreenshot as ImageGrab
+#import pyscreenshot as ImageGrab
 
 #Get the face_cascade
 face_cascade = cv2.CascadeClassifier('/home/otoshuki/anaconda/envs/tensorflow/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml')
@@ -135,7 +135,7 @@ while(1):
     for (x,y,w,h) in faces:
         sub_face = fore[y:y+220, x:x+220]
     #Make the hologram using the function and display it
-    makeHologram(sub_face.copy())
+    #makeHologram(sub_face.copy())
 
     #Show the cropped image
     cv2.imshow('Cropped', sub_face)
